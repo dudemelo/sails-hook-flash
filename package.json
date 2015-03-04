@@ -1,6 +1,6 @@
 {
   "name": "sails-hook-flash",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -19,8 +19,7 @@
   "sails": {
     "isHook": true
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "sails": "~0.11.0"
   }
