@@ -1,9 +1,13 @@
+/**
+ * Flash message
+ */
+
 module.exports = function (sails) {
-    return {
-        routes: {
-            before: {
-                'all /*': require('./lib/flash')
-            }
-        }
+  return {
+    routes: {
+      before: {
+        'all /*': require('./lib/flash')
+      }
     }
+  }
 };
