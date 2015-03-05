@@ -1,7 +1,8 @@
 {
   "name": "sails-hook-flash",
-  "version": "0.1.1",
-  "description": "",
+  "version": "0.1.2",
+  "description": "The simplest way to use flash message in your Sails application",
+  "keywords": "sails, flash, message, hook, session",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

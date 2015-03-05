@@ -1,10 +1,11 @@
 # sails-hook-flash
 
 [npm-url]: https://npmjs.org/package/sails-hook-flash
-[![NPM version](https://img.shields.io/npm/v/sails-hook-flash.svg?style=flat)](npm-url)
-[![NPM download](https://img.shields.io/npm/dm/sails-hook-flash.svg?style=flat)](npm-url)
 
-The simplest way to use **flash messages** in your [Sails](http://sailsjs.org) application.
+[![NPM version](https://img.shields.io/npm/v/sails-hook-flash.svg?style=flat)][npm-url]
+[![NPM download](https://img.shields.io/npm/dm/sails-hook-flash.svg?style=flat)][npm-url]
+
+The simplest way to use **flash messages** in your [Sails](http://sailsjs.org) application. This is useful when you want to redirect and have a special message shown on the next page.
 
 
 ## Usage
@@ -20,6 +21,7 @@ The simplest way to use **flash messages** in your [Sails](http://sailsjs.org) a
   ```
 
 2. Recover and make it accessible in your view
+
   ```js
   // api/controllers/AdminController.js
   index: function (req, res) {
@@ -29,6 +31,7 @@ The simplest way to use **flash messages** in your [Sails](http://sailsjs.org) a
   ```
 
 3. Render your messages
+
   ```js
   // views/admin/index.ejs
   <% flashMessages.forEach(function (message) { %>
