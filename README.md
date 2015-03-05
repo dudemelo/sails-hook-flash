@@ -1,6 +1,10 @@
 # sails-hook-flash
 
-The simplest way to use **flash messages** in your [Sails](http://sails.org) application.
+[npm-url]: https://npmjs.org/package/sails-hook-flash
+[![NPM version](https://img.shields.io/npm/v/sails-hook-flash.svg?style=flat)](npm-url)
+[![NPM download](https://img.shields.io/npm/dm/sails-hook-flash.svg?style=flat)](npm-url)
+
+The simplest way to use **flash messages** in your [Sails](http://sailsjs.org) application.
 
 
 ## Usage
