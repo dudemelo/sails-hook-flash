@@ -1,7 +1,8 @@
+'use strict';
+
 /**
  * Flash message
  */
-
 module.exports = function (sails) {
   return {
     routes: {
