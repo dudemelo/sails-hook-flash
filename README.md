@@ -8,39 +8,40 @@
 The simplest way to use **flash messages** in your [Sails](http://sailsjs.org) application. This is useful when you want to redirect and have a special message shown on the next page.
 
 
+## Example
+
+Add a new flash message
+```js
+// api/controllers/UserController.js
+login: function (req, res) {
+  req.addFlash('success', 'A success message');
+  return res.redirect('/sample/success');
+}
+```
+
+Render your flash message
+```js
+// views/admin/index.ejs
+<% flash.get('success').forEach(function (message) { %>
+    <div class="alert alert-success">
+        <%= message %>
+    </div>
+<% }) %>
+```
+*NOTE: The EJS view engine is used in this sample, but you're not limited to it.*
+
+
 ## Usage
 
-1. Add a new flash message
+#### Controller layer
+* `req.addFlash(type, message)` - Store a new flash message
+* `req.getFlash(type`           - Get a specific type of flash messages
+* `req.hasFlash(type`           - Check if exists a specific type of flash message
 
-  ```js
-  // api/controllers/UserController.js
-  login: function (req, res) {
-    req.addFlash('success', 'A success message');
-    return res.redirect('/sample/success');
-  }
-  ```
-
-2. Recover and make it accessible in your view
-
-  ```js
-  // api/controllers/AdminController.js
-  index: function (req, res) {
-    res.locals.flashMessages = req.getFlash('success');
-    return res.view();
-  }
-  ```
-
-3. Render your messages
-
-  ```js
-  // views/admin/index.ejs
-  <% flashMessages.forEach(function (message) { %>
-      <div class="alert alert-success">
-          <%= message %>
-      </div>
-  <% }) %>
-  ```
-  *NOTE: The EJS view engine is used in this sample, but you're not limited to it.*
+#### View layer
+* `flash.all()`     - Get all flash messages
+* `flash.get(type)` - Get a specific type of flash messages
+* `flash.has(type)` - Check if exists a specific type of flash message
 
 
 ## Instalation
