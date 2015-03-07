@@ -1,9 +1,11 @@
 # sails-hook-flash
 
-[npm-url]: https://npmjs.org/package/sails-hook-flash
+[npm-url]: http://npmjs.org/package/sails-hook-flash
+[travis-url]: http://travis-ci.org/dudemelo/sails-hook-flash
 
-[![NPM version](https://img.shields.io/npm/v/sails-hook-flash.svg?style=flat)][npm-url]
-[![NPM download](https://img.shields.io/npm/dm/sails-hook-flash.svg?style=flat)][npm-url]
+[![NPM version](https://img.shields.io/npm/v/sails-hook-flash.svg?style=flat-square)][npm-url]
+[![NPM download](https://img.shields.io/npm/dm/sails-hook-flash.svg?style=flat-square)][npm-url]
+[![NPM download](https://img.shields.io/travis/dudemelo/sails-hook-flash.svg?style=flat-square)][travis-url]
 
 The simplest way to use **flash messages** in your [Sails](http://sailsjs.org) application. This is useful when you want to redirect and have a special message shown on the next page.
 
