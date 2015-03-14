@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/dudemelo/sails-hook-flash/issues"
   },
-  "homepage": "https://github.com/sgress454/sails-hook-flash",
+  "homepage": "https://github.com/dudemelo/sails-hook-flash",
   "sails": {
     "isHook": true
   },
