@@ -1,29 +1,29 @@
+'use strict';
+
 var Sails = require('sails').Sails;
+var Assert = require('assert');
 
 describe('Request tests ::', function () {
 
   var sails;
 
+  // Sails lift
   before(function (done) {
-
     this.timeout(10000);
-
     Sails().lift({
-        hooks: { grunt: false },
+        hooks: { grunt: false, flash: require('../index') },
         log:   { level: 'error' }
       }, function (error, _sails) {
-
       if (error) {
         return done(error);
       }
-
       sails = _sails;
       return done();
-
     });
 
   });
 
+  // Sails lower
   after(function (done) {
     if (sails) {
       return sails.lower(done);
@@ -31,15 +31,18 @@ describe('Request tests ::', function () {
     return done();
   });
 
+  // Adding a flash message
   it('req.addFlash', function () {
     return true;
   });
 
-  it('req.getFlash', function () {
+  // Checking if a flash message exists
+  it('req.hasFlash', function () {
     return true;
   });
 
-  it('req.hasFlash', function () {
+  // Getting a flash message
+  it('req.getFlash', function () {
     return true;
   });
 
