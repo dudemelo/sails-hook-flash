@@ -26,7 +26,10 @@ Render your flash message
 // views/admin/index.ejs
 <% flash.get('success').forEach(function (message) { %>
     <div class="alert alert-success">
-        <%= message %>
+       <%= message %>
+       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+       </button>
     </div>
 <% }) %>
 ```
