@@ -1,6 +1,6 @@
 {
   "name": "sails-hook-flash",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "The simplest way to use flash message in your Sails application",
   "keywords": "sails, flash, message, hook, session",
   "main": "index.js",
