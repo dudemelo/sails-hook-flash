@@ -40,8 +40,8 @@ Render your flash message
 
 #### Controller layer
 * `req.addFlash(type, message)` - Store a new flash message
-* `req.getFlash(type`           - Get a specific type of flash messages
-* `req.hasFlash(type`           - Check if exists a specific type of flash message
+* `req.getFlash(type)`          - Get a specific type of flash messages
+* `req.hasFlash(type)`          - Check if exists a specific type of flash message
 
 #### View layer
 * `flash.all()`     - Get all flash messages
