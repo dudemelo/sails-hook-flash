@@ -16,7 +16,7 @@ describe('Request tests ::', function () {
     it('is callable ', function () {
       assert.func(
         request.addFlash,
-        'addFlash must be a function'
+        'Must be a function'
       );
       assert.ok(request.addFlash('success', 'Stores a message.'));
       assert.ok(request.addFlash('success', 'Stores another message.'));
@@ -26,11 +26,11 @@ describe('Request tests ::', function () {
       var session = request.session[Object.keys(request.session)[0]];
       assert.object(
         session,
-        'The session must be an object'
+        'Must be an object'
       );
       assert.array(
         session.success,
-        'The flash message type must have an array of messages'
+        'Must be an array of messages'
       );
       assert.strictEqual(
         session.success[0],
@@ -43,7 +43,7 @@ describe('Request tests ::', function () {
       assert.strictEqual(
         session.success.length,
         2,
-        'The flash message type must have an array of messages'
+        'Must have an array with 2 messages'
       );
     });
   });
@@ -52,7 +52,7 @@ describe('Request tests ::', function () {
     it('is callable', function () {
       assert.func(
         request.getFlash,
-        'getFlash must be a function'
+        'Must be a function'
       );
     });
   });
