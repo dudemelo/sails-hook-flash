@@ -1,8 +1,8 @@
 # sails-hook-flash
 
-[![NPM version](npm-badge)][npm-url]
-[![NPM download](npm-download)][npm-url]
-[![Travis CI](travis-ci)][travis-url]
+[![NPM version][npm-version]][npm-url]
+[![NPM download][npm-download]][npm-url]
+[![Travis CI][travis-ci]][travis-url]
 
 The simplest way to use **flash messages** in your [Sails](http://sailsjs.org)
 application. This is useful when you want to redirect and have a special message
