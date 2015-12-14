@@ -12,29 +12,50 @@ describe('Response tests ::', function () {
     return flash(request, response, done);
   });
 
-  describe('flash.add(type, message)', function () {
-    it('is callable ', function () {
+  describe('all()', function () {
+    it('is callable', function () {
       assert.func(
-        request.addFlash,
-        'flash.add must be a function'
+        response.locals.flash.all,
+        'Must be a function'
+      );
+    });
+
+    it('returns all messages', function () {
+      assert.object(
+        response.locals.flash.all(),
+        'Must return an object of message types'
       );
     });
   });
 
-  describe('flash.get(type)', function () {
+  describe('get(type)', function () {
     it('is callable', function () {
       assert.func(
-        request.getFlash,
-        'flash.get must be a function'
+        response.locals.flash.get,
+        'Must be a function'
+      );
+    });
+
+    it('returns all messages from a type', function () {
+      assert.array(
+        response.locals.flash.get('success'),
+        'Must return an array of messages'
       );
     });
   });
 
-  describe('hasFlash(type)', function () {
+  describe('has(type)', function () {
     it('is callable', function () {
       assert.func(
-        request.hasFlash,
-        'flash.has must be a function'
+        response.locals.flash.has,
+        'Must be a function'
+      );
+    });
+
+    it('checks if a message type was stored', function () {
+      assert.bool(
+        response.locals.flash.has('success'),
+        'Must return a boolean'
       );
     });
   });
