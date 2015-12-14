@@ -1,6 +1,6 @@
 var Sails = require('sails').Sails;
 
-describe('Response tests ::', function () {
+describe('Functional :: Response tests ::', function () {
 
   var sails;
 

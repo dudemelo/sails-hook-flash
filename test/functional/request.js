@@ -3,7 +3,7 @@
 var Sails = require('sails').Sails;
 var Assert = require('assert');
 
-describe('Request tests ::', function () {
+describe('Functional :: Request tests ::', function () {
 
   var sails;
 
