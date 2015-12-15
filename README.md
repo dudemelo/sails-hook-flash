@@ -1,8 +1,9 @@
 # sails-hook-flash
 
-[![NPM version][npm-version]][npm-url]
-[![NPM download][npm-download]][npm-url]
+[![NPM Version][npm-version]][npm-url]
+[![NPM Download][npm-download]][npm-url]
 [![Travis CI][travis-ci]][travis-url]
+[![Coverage Status][coveralls]][coveralls-url]
 
 The simplest way to use **flash messages** in your [Sails](http://sailsjs.org)
 application. This is useful when you want to redirect and have a special message
@@ -51,7 +52,9 @@ Rendering your flash message:
 
 [npm-url]: http://npmjs.org/package/sails-hook-flash
 [travis-url]: http://travis-ci.org/dudemelo/sails-hook-flash
+[coveralls-url]: https://coveralls.io/github/dudemelo/sails-hook-flash?branch=master
 
 [npm-version]: https://img.shields.io/npm/v/sails-hook-flash.svg?style=flat-square
 [npm-download]: https://img.shields.io/npm/dm/sails-hook-flash.svg?style=flat-square
 [travis-ci]: https://img.shields.io/travis/dudemelo/sails-hook-flash.svg?style=flat-square
+[coveralls]: https://img.shields.io/coveralls/dudemelo/sails-hook-flash.svg?style=flat-square
