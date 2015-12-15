@@ -5,7 +5,8 @@
   "keywords": "sails, flash, message, hook, session",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -b"
+    "test": "mocha test/ -R spec",
+    "test-ci": "istanbul cover _mocha -- test/ -R spec"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "sails": "~0.11.0",
     "mocha": "~2.2.1",
-    "assert-plus": "^0.2.0"
+    "assert-plus": "^0.2.0",
+    "istanbul": "^0.4.1"
   }
 }
