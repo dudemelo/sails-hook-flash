@@ -3,6 +3,10 @@ language: node_js
 node_js:
   - "0.10"
 
+sudo: false
+
 branches:
   only:
     - master
+
+script: "npm run-script test-ci"
