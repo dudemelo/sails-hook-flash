@@ -10,3 +10,5 @@ branches:
     - master
 
 script: "npm run-script test-ci"
+
+after_script: "npm install coveralls && cat ./coverage/lcov.info | coveralls"
